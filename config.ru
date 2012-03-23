@@ -4,4 +4,15 @@ Bundler.require(:default)
 
 require './blog'
 
+sprockets = Sprockets::Environment.new do |env|
+	env.logger = Logger.new(STDOUT)
+end
+
+sprockets.append_path 'assets/javascripts'
+sprockets.append_path 'assets/stylesheets'
+
+map '/assets' do
+	run sprockets
+end
+
 run Blog
