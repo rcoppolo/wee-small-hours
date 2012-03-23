@@ -1,8 +1,7 @@
+require 'rubygems'
 require 'bundler'
 Bundler.require(:default)
 
-get '/' do
-	"Hello, world."
-end
+require './blog'
 
-run Sinatra::Application
+run Blog
