@@ -6,4 +6,5 @@ gem 'haml'
 gem 'thin'
 gem 'sass'
 gem 'coffee-script'
-gem 'bourbon'
+gem 'bourbon' #update by doing 'bourbon update' in stylesheets directory
+gem 'rdiscount'
