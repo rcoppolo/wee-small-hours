@@ -2,7 +2,7 @@ require 'rubygems'
 require 'bundler'
 Bundler.require(:default)
 
-require './blog'
+require './app'
 
 sprockets = Sprockets::Environment.new do |env|
 	env.logger = Logger.new(STDOUT)
@@ -15,4 +15,4 @@ map '/assets' do
 	run sprockets
 end
 
-run Blog
+run App

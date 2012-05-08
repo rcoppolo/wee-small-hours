@@ -1,4 +1,4 @@
-class Blog < Sinatra::Base
+class App < Sinatra::Base
 
 	get '/' do
 		set :haml => :html5
