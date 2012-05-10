@@ -2,37 +2,28 @@ $golden: 1.618
 
 $serif: Georgia, Times, serif
 $sans: Helvetica, Arial, sans-serif
-$skolar: "skolar", serif
-$inconsolata: "inconsolata", monospace
 
-$body-text: $skolar
+$body-text: $serif
 
-// 18px or 16px looks good w skolar. Annnnnything but 17px.
 $font-size: 16px
 $baseline: 25px
-
-$light: rgba(0,0,0,.2)
 
 body
   font-family: $body-text
   font-size: $font-size
 
 h1
-  font-family: $inconsolata
   font-size: (3 * $golden) * $font-size
   line-height: 4 * $baseline
+
 h2
   font-size: (2 * $golden) * $font-size
   line-height: 3 * $baseline
+
 h3
   font-size: (1 * $golden) * $font-size
   line-height: 2 * $baseline
-h4
-  font-size: (1 * $golden) * $font-size
-h5
-  font-size: (1 * $golden) * $font-size
-h6
-  font-size: (1 * $golden) * $font-size
+
 p
   line-height: $baseline
-  margin: 13px 0 12px 0
+  margin: ($baseline / 2) 0 (($baseline / 2) + 1px) 0
