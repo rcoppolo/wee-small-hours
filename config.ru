@@ -10,6 +10,7 @@ end
 
 sprockets.append_path 'assets/javascripts'
 sprockets.append_path 'assets/stylesheets'
+sprockets.append_path 'assets/images'
 
 map '/assets' do
   run sprockets
